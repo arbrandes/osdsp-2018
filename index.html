@@ -93,8 +93,8 @@ for (var i = 0; i < n; i++) {
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-    controls: false,
-    progress: false,
+    controls: true,
+    progress: true,
     history: true,
     center: true,
 
@@ -135,7 +135,7 @@ Reveal.initialize({
         { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
         { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
         { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
-        { src: 'reveal.js/plugin/multiplex/master.js', async: true },
+        { src: 'reveal.js/plugin/multiplex/client.js', async: true },
         { src: 'reveal.js-menu/menu.js', async: true, condition: function() { return !!document.body.classList; } },
     ]
 });
